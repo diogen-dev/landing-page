@@ -18,6 +18,12 @@ body {
   overflow-x: hidden;
 }
 
+.ud-logo-icon {
+  height: 34px;
+  width: auto;
+  margin-right: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -246,6 +252,16 @@ p {
   max-width: 160px;
 }
 
+.ud-logo-icon-dark {
+  display: none;
+}
+
+.ud-logo-text {
+  color: var(--white);
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
 .navbar-toggler {
   padding: 0;
 }
@@ -461,6 +477,18 @@ p {
 
 .navbar-btn .ud-white-btn:hover {
   background: white;
+  color: var(--heading-color);
+}
+
+.sticky .ud-logo-icon-light {
+  display: none;
+}
+
+.sticky .ud-logo-icon-dark {
+  display: inline-block;
+}
+
+.sticky .ud-logo-text {
   color: var(--heading-color);
 }
 

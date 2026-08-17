@@ -40,6 +40,15 @@
   }
 }
 
+.ud-logo-icon-dark {
+  display: none;
+}
+
+.ud-logo-text {
+  color: var(--white);
+  @include transition(0.3s);
+}
+
 .navbar-toggler {
   padding: 0;
 
@@ -275,6 +284,18 @@
 }
 
 .sticky {
+  & .ud-logo-icon-light {
+    display: none;
+  }
+
+  & .ud-logo-icon-dark {
+    display: inline-block;
+  }
+
+  & .ud-logo-text {
+    color: var(--heading-color);
+  }
+
   & .navbar-toggler {
     & .toggler-icon {
       background-color: var(--heading-color);

@@ -15,9 +15,16 @@ diogen.md website. This is the source of truth for scope until superseded.
   - Color palette: keep the template's existing Bootstrap purple/blue theme
     as-is for now (no palette redesign).
 - **Contact details**: no real email/phone/address yet — use clearly-fake
-  placeholders (e.g. `hello@diogen.md`) marked for later replacement.
-- **Contact form**: leave `contact.html`'s form non-functional (no backend/
-  form-service wiring) for now.
+  placeholders (e.g. `contact@diogen.md`) marked for later replacement.
+- **Contact form**: removed from `contact.html`/`index.html` (all 3 locales)
+  as of 2026-08-17. A static GitHub Pages site can't send email without a
+  backend or third-party relay, and a `mailto:` form action just opens the
+  visitor's mail client rather than actually sending — not acceptable. The
+  contact info block (location, email) stays; the form markup and its
+  `col-xl-4`/`col-xl-8` two-column layout were removed, collapsing the
+  section to a single centered `col-lg-12` column. Revisit with Formspree
+  (or a similar form-relay service) once picked — the `ud-contact-form*`
+  SCSS partials are left in place for that.
 
 ## Languages & Site Structure
 
